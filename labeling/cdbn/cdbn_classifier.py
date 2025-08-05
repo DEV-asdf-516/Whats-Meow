@@ -11,16 +11,8 @@ from sklearn.svm import SVC
 import torch
 import pickle
 from collections import defaultdict
-
 from tqdm import tqdm
-
-from labeling.cdbn.cdbn import (
-    CDBN,
-    apply_fdap,
-    extract_cdbn_features,
-    extract_mel_spectrogram,
-    load_pretrained_cdbn_model,
-)
+from labeling.cdbn.cdbn import extract_cdbn_features, load_pretrained_cdbn_model
 
 logger = logging.getLogger(__name__)
 
